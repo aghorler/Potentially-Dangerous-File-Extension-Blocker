@@ -9,7 +9,7 @@ var blocked = ["exe", "msi", "reg", "bat", "action", "apk", "app", "bat", "bin",
 chrome.downloads.onDeterminingFilename.addListener(function(downloadItem){
 	var filename = downloadItem.filename;
 	var extension = filename.substring(filename.lastIndexOf('.') + 1);
-	if(blocked.indexOf(extension) != -1){
+	if(blocked.indexOf(extension.toLowerCase()) != -1){
 		chrome.downloads.cancel(
 			downloadItem.id
 		);
