@@ -11,7 +11,7 @@ The only required permissions is 'downloads'.
 
 The extension uses the `onDeterminingFilename` function to cancel a download if it's file extension is in the following list.
 
-`"action", "apk", "app", "bat", "bin", "cmd", "com", "command", "cpl", "csh", "exe", "gadget", "inf1", "ins", "inx", "ipa", "isu", "jar", "job", "js","jse", "ksh", "lnk", "msc", "msi", "msp", "mst", "osx", "out", "paf", "pif", "prg", "ps1", "reg", "rgs", "run", "scr", "sct", "sh", "shb", "shs", "u3p", "vb", "vbe", "vbs" ,"vbscript", "workflow", "ws", "wsf", "wsh"`.
+`"action", "apk", "app", "bat", "bin", "cmd", "com", "command", "cpl", "csh", "exe", "gadget", "inf1", "ins", "inx", "ipa", "isu", "jar", "job", "js", "jse", "ksh", "lnk", "msc", "msi", "msp", "mst", "osx", "out", "paf", "pif", "prg", "ps1", "reg", "rgs", "run", "scr", "sct", "sh", "shb", "shs", "u3p", "vb", "vbe", "vbs" ,"vbscript", "workflow", "ws", "wsf", "wsh"`.
 
 #####Download
 
