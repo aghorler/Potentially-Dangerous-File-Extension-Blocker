@@ -1,18 +1,31 @@
 /* Potentially dangerous file extension list. */
-var blocked = ["exe", "msi", "reg", "bat", "action", "apk", "app", "bat", "bin", "cmd", 
-			"com", "command", "cpl", "csh", "exe", "gadget", "inf1", "ins", "inx", "ipa", 
-			"isu", "jar", "job", "js","jse", "ksh", "lnk", "msc", "msi", "msp", "mst", 
-			"osx", "out", "paf", "pif", "prg", "ps1", "reg", "rgs", "run", "scr", "sct", 
-			"sh", "shb", "shs", "u3p", "vb", "vbe", "vbs" ,"vbscript", "workflow", "ws", "wsf", "wsh"];
+var blocked = ["action", "apk", "app", "application", "aspx", "bash", "bat", "bin", "class", "cmd", "cmd ", "com", 
+               "command", "cpl", "csh", "dev", "dll", "drv", "exe", "gadget", "hlp", "hta", "htm", "html", "img", 
+               "inf", "inf1", "ins", "inx", "ipa ", "iso", "isu", "jar", "job", "js", "jse", "ksh", "lnk", "msc", 
+               "msh", "msh1", "msh1xml", "msh2", "msh2xml", "msi", "msp", "mst ", "ocx", "osx", "out", "paf", 
+               "php", "pif", "prg", "ps1", "ps1xml", "ps2", "ps2xml", "psc1", "psc2", "py", "python", "reg", 
+               "rgs", "run", "scf", "scr", "sct ", "sh", "shb", "shs", "swf", "u3p", "vb", "vbe", "vbs", 
+               "vbscript", "vbx", "workflow", "ws", "wsc", "wsf", "wsh"];
 
-/* Cancel download if file extension is in above list. */
+/* Cancel download if file extension is in above array. */
 chrome.downloads.onDeterminingFilename.addListener(function(downloadItem){
-	var filename = downloadItem.filename;
-	var extension = filename.substring(filename.lastIndexOf('.') + 1);
-	if(blocked.indexOf(extension.toLowerCase()) != -1){
-		chrome.downloads.cancel(
-			downloadItem.id
-		);
-		alert("File prevented from being downloaded.");
-	}
+    var filename = downloadItem.filename;
+    var extension = filename.substring(filename.lastIndexOf('.') + 1);
+
+    if(blocked.indexOf(extension.toLowerCase()) != -1){
+        chrome.downloads.cancel(downloadItem.id);
+
+        if(downloadItem.state == "complete"){
+            chrome.downloads.removeFile(downloadItem.id);
+        }
+
+        chrome.notifications.create('', {
+          title: 'Download blocked',
+          message: 'A potentially dangerous download was blocked. Please contact your device admin for more information.',
+          iconUrl: '/img/icon128.png',
+          type: 'basic',
+          priority: 2,
+          requireInteraction: true
+        });
+    }
 });

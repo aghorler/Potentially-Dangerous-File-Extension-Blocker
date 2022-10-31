@@ -1,5 +1,5 @@
 ## Potentially Dangerous File Extension Blocker
-**Version 1.0.0 | December 1 2016**
+**Version 1.1.0 | October 31 2022**
 
 Block potentially dangerous file extensions from being downloaded in Chromium browsers.
 
@@ -11,7 +11,13 @@ The only required permissions is 'downloads'.
 
 The extension uses the `onDeterminingFilename` function to cancel a download if it's file extension is in the following list.
 
-`"action", "apk", "app", "bat", "bin", "cmd", "com", "command", "cpl", "csh", "exe", "gadget", "inf1", "ins", "inx", "ipa", "isu", "jar", "job", "js", "jse", "ksh", "lnk", "msc", "msi", "msp", "mst", "osx", "out", "paf", "pif", "prg", "ps1", "reg", "rgs", "run", "scr", "sct", "sh", "shb", "shs", "u3p", "vb", "vbe", "vbs" ,"vbscript", "workflow", "ws", "wsf", "wsh"`.
+`"action", "apk", "app", "application", "aspx", "bash", "bat", "bin", "class", "cmd", "cmd ", "com", 
+"command", "cpl", "csh", "dev", "dll", "drv", "exe", "gadget", "hlp", "hta", "htm", "html", "img", 
+"inf", "inf1", "ins", "inx", "ipa ", "iso", "isu", "jar", "job", "js", "jse", "ksh", "lnk", "msc", 
+"msh", "msh1", "msh1xml", "msh2", "msh2xml", "msi", "msp", "mst ", "ocx", "osx", "out", "paf", 
+"php", "pif", "prg", "ps1", "ps1xml", "ps2", "ps2xml", "psc1", "psc2", "py", "python", "reg", 
+"rgs", "run", "scf", "scr", "sct ", "sh", "shb", "shs", "swf", "u3p", "vb", "vbe", "vbs", 
+"vbscript", "vbx", "workflow", "ws", "wsc", "wsf", "wsh"`.
 
 #### Download
 
@@ -27,7 +33,7 @@ The extension is hosted entirely on GitHub and the Chrome Web Store. These servi
 
 #### License
 
-Copyright 2017 Aaron Horler
+Copyright 2022 Aaron Horler
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
