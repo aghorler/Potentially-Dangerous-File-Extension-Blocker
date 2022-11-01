@@ -1,22 +1,22 @@
 ## Potentially Dangerous File Extension Blocker
-**Version 1.1.0 | October 31 2022**
+**Version 1.1.1 | 1 November 2022**
 
 Block potentially dangerous file extensions from being downloaded in Chromium browsers.
 
-This extension is intended to be deployed by administrative policies, or installed normally for use by less-tech-savvy users.
+This extension is intended to be deployed by administrative policies, or installed normally for use by less-tech-savvy users, for the purpose of preventing the download of files with extensions that are potentially dangerous.
 
-The only required permissions is 'downloads'.
+The only required permissions is 'downloads' (to monitor downloaded files) and 'notifications' (to notify users of blocked downloads).
 
 #### How it works
 
 The extension uses the `onDeterminingFilename` function to cancel a download if it's file extension is in the following list.
 
-`"action", "apk", "app", "application", "aspx", "bash", "bat", "bin", "class", "cmd", "cmd ", "com", 
-"command", "cpl", "csh", "dev", "dll", "drv", "exe", "gadget", "hlp", "hta", "htm", "html", "img", 
+`"action", "apk", "app", "appimage", "application", "aspx", "bash", "bat", "bin", "class", "cmd", "cmd ", "com", 
+"command", "cpl", "csh", "deb", "dev", "dll", "dmg", "drv", "exe", "gadget", "hlp", "hta", "htm", "html", "img", 
 "inf", "inf1", "ins", "inx", "ipa ", "iso", "isu", "jar", "job", "js", "jse", "ksh", "lnk", "msc", 
 "msh", "msh1", "msh1xml", "msh2", "msh2xml", "msi", "msp", "mst ", "ocx", "osx", "out", "paf", 
 "php", "pif", "prg", "ps1", "ps1xml", "ps2", "ps2xml", "psc1", "psc2", "py", "python", "reg", 
-"rgs", "run", "scf", "scr", "sct ", "sh", "shb", "shs", "swf", "u3p", "vb", "vbe", "vbs", 
+"rgs", "rpm", "run", "scf", "scr", "sct ", "sh", "shb", "shs", "swf", "u3p", "vb", "vbe", "vbs", 
 "vbscript", "vbx", "workflow", "ws", "wsc", "wsf", "wsh"`.
 
 #### Download
