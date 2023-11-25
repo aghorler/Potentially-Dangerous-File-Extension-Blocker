@@ -11,13 +11,7 @@ The only required permissions is 'downloads' (to monitor downloaded files), 'not
 
 The extension uses the `onDeterminingFilename` function to cancel a download if it's file extension is in the following list.
 
-`"action", "apk", "app", "appimage", "application", "aspx", "bash", "bat", "bin", "class", "cmd", "cmd ", "com", 
-"command", "cpl", "csh", "deb", "dev", "dll", "dmg", "drv", "exe", "gadget", "hlp", "hta", "htm", "html", "img", 
-"inf", "inf1", "ins", "inx", "ipa ", "iso", "isu", "jar", "job", "js", "jse", "ksh", "lnk", "msc", 
-"msh", "msh1", "msh1xml", "msh2", "msh2xml", "msi", "msp", "mst ", "ocx", "osx", "out", "paf", 
-"php", "pif", "prg", "ps1", "ps1xml", "ps2", "ps2xml", "psc1", "psc2", "py", "python", "reg", 
-"rgs", "rpm", "run", "scf", "scr", "sct ", "sh", "shb", "shs", "swf", "u3p", "vb", "vbe", "vbs", 
-"vbscript", "vbx", "workflow", "ws", "wsc", "wsf", "wsh"`.
+`"action", "apk", "app", "appimage", "application", "appx", "appxbundle", "aspx", "bash", "bat", "bin", "chm", "class", "cmd", "cmd ", "com", "command", "cpl", "crx", "csh", "deb", "dev", "dll", "dmg", "drv", "exe", "gadget", "hlp", "hta", "htm", "html", "img", "inf", "inf1", "ins", "inx", "ipa ", "iso", "isu", "jar", "job", "js", "jse", "jsf", "jtd", "ksh", "lnk", "lnkx", "msc", "msh", "msh1", "msh1xml", "msh2", "msh2xml", "msi", "msp", "mst ", "msu", "ocx", "osx", "out", "paf", "php", "pif", "prg", "ps1", "ps1xml", "ps2", "ps2xml", "psc1", "psc2", "psm1", "py", "pyc", "pyo", "python", "pyw", "pyz", "pyzw", "rb", "rbw", "rdp", "reg", "rgs", "rpm", "run", "scf", "scr", "sct ", "sh", "shb", "shs", "swf", "u3p", "vb", "vbe", "vbs", "vbscript", "vbx", "workflow", "ws", "wsb", "wsc", "wsf", "wsh", "xap", "xll", "xpi"`.
 
 #### Download
 
