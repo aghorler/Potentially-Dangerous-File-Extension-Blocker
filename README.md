@@ -1,11 +1,11 @@
 ## Potentially Dangerous File Extension Blocker
-**Version 1.1.1 | 1 November 2022**
+**Version 1.2.0 | 25 November 2023**
 
 Block potentially dangerous file extensions from being downloaded in Chromium browsers.
 
 This extension is intended to be deployed by administrative policies, or installed normally for use by less-tech-savvy users, for the purpose of preventing the download of files with extensions that are potentially dangerous.
 
-The only required permissions is 'downloads' (to monitor downloaded files) and 'notifications' (to notify users of blocked downloads).
+The only required permissions is 'downloads' (to monitor downloaded files), 'notifications' (to notify users of blocked downloads), and 'storage' (to store extension options).
 
 #### How it works
 
@@ -33,7 +33,7 @@ The extension is hosted entirely on GitHub and the Chrome Web Store. These servi
 
 #### License
 
-Copyright 2022 Aaron Horler
+Copyright 2023 Aaron Horler
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
